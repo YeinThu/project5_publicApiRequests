@@ -18,7 +18,7 @@ const form = `
 searchContainer.innerHTML = form;
 
 // Fetch For 12 Users
-fetch('https://randomuser.me/api/?page=1&results=12&seed=abc')
+fetch('https://randomuser.me/api/?results=12')
   .then(response => response.json())
   .then(data => displayUsers(data.results))
   .catch(error => console.log(error));
